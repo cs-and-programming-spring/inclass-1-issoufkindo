@@ -1,6 +1,4 @@
 
-
-
 /***********************************************
 * Name: issouf kindo
 * Email: kindoi67@students.rowan.edu
@@ -10,10 +8,21 @@
 ***********************************************/
 
 #include <iostream>
-
+#include <windows.h>
+#include <string>
 using namespace std; 
 
 const  float PI = 3.14159;
+
+#define VK_W 0x57
+#define VK_A 0x41
+#define VK_S 0x53
+#define VK_D 0x44
+
+int up = 0;
+int down = 0;
+int left = 0;
+int right = 0;
 
 int main()
 {
@@ -51,7 +60,7 @@ int main()
 	float radius, circonference;
 	//Display purpose of the program
 	cout << " ******************************************" << endl;
-	cout << " This program takes program will calculate the circonference of a cercle " << endl;
+	cout << " This program will calculate the circonference of a cercle " << endl;
 	cout << " ******************************************\n\n";
 
 	//Get user input
@@ -76,7 +85,7 @@ int main()
 	float Fahrenheit, Celsius;
 	//Display purpose of the program
 	cout << " ******************************************" << endl;
-	cout << " This program takes program will convert temperature in degrees Celsius to degrees Fahrenheit " << endl;
+	cout << " This program will convert temperature in degrees Celsius to degrees Fahrenheit " << endl;
 	cout << " ******************************************\n\n";
 
 	//Get user input
@@ -87,15 +96,39 @@ int main()
 	Fahrenheit = (9 / 5) * Celsius + 32;
 	
 
-	//Display the distance kilometer 
-	cout << " The temperature Fahrenheit is = " << Fahrenheit << "\n\n";
+	//Display temperature in Fahrenheit
+	cout << " The temperature in Fahrenheit is = " << Fahrenheit << "\n\n";
 	cout << "Program has ended" << endl;
 
 
+	/*
+	*this the program will take a given person age in years computes the equivalent number of months, days, hours, minutes, and seconds. 
+	*
+	**/
 
-	
+	float years, months, days,hours, minutes, seconds;
+	//Display purpose of the program
+	cout << " ******************************************" << endl;
+	cout << " This program will convert person age in years to the equivalent number of months, days, hours, minutes, and seconds. " << endl;
+	cout << " ******************************************\n\n";
 
-	system("pause");
+	//Get user input
+	cout << "Please input age (number of years): ";
+	cin >> years;
+
+	//Compute kilometer into mile 
+	months = 12 * years;
+	days = 365.25 * years;
+	hours = 24 * days ;
+	minutes = 60 * hours;
+	seconds = 60 * minutes;
 	
-	return 0;
-}
+	//Display temperature in Fahrenheit
+	
+	cout << "number of  years = " << years << "\n\n";
+		cout << "number of  months = " << months << "\n\n";
+			cout << "number of  days = " << days << "\n\n";
+				cout << "number of  minutes = " << minutes << "\n\n";
+					cout << "number of  seconds = " << seconds << "\n\n";					
+	                    cout << "Program has ended" << endl;
+
