@@ -132,3 +132,42 @@ int main()
 					cout << "number of  seconds = " << seconds << "\n\n";					
 	                    cout << "Program has ended" << endl;
 
+
+	/*
+	*this the program will print your first initial as a block letter. 
+	*
+	**/
+	
+	
+	char initial;
+	//Display purpose of the program
+	cout << " ******************************************" << endl;
+	cout << " This program will  print your first initial as a block letter. " << endl;
+	cout << " ******************************************\n\n";
+
+	//Get user input
+	cout << "Please your first initial: ";
+	cin >> initial;
+
+	//make a grid
+	int grid[6][6] = {{1,2,3,4,5,6}, {1,2,3,4,5,6}};
+    char character = '*';
+	
+	//Display 
+	
+	cout << grid[1][1] << grid[1][2] <<grid[1][6] <<grid[6][6] <<grid[6][6] <<grid[6][6] << "\n";
+	cout << grid[6][6]<< "\n";
+	cout << grid[6][6]<< "\n";
+	cout << grid[6][6]<< "\n";
+	cout << grid[6][6]<< "\n";
+	cout << grid[6][6]<< "\n";
+
+							
+    cout << "Program has ended" << endl;
+
+	
+
+	system("pause");
+	
+	return 0;
+}
