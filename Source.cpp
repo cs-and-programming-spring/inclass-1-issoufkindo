@@ -8,16 +8,11 @@
 ***********************************************/
 
 #include <iostream>
-#include <windows.h>
 #include <string>
 using namespace std; 
 
 const  float PI = 3.14159;
 
-#define VK_W 0x57
-#define VK_A 0x41
-#define VK_S 0x53
-#define VK_D 0x44
 
 int up = 0;
 int down = 0;
@@ -27,7 +22,7 @@ int right = 0;
 int main()
 {
 
-
+/*
 	double miles, kilometers, meters, centimeters, millimeters;
 
 	//Display purpose of the program
@@ -56,6 +51,7 @@ int main()
 	*this the program will calculate the circonference of a cercle 
 	*
 	**/
+		/*
 
 	float radius, circonference;
 	//Display purpose of the program
@@ -81,7 +77,7 @@ int main()
 	*this the program will  convert a temperature in degrees Celsius to degrees Fahrenheit.
 	*
 	**/
-
+	/*
 	float Fahrenheit, Celsius;
 	//Display purpose of the program
 	cout << " ******************************************" << endl;
@@ -105,7 +101,7 @@ int main()
 	*this the program will take a given person age in years computes the equivalent number of months, days, hours, minutes, and seconds. 
 	*
 	**/
-
+	/*
 	float years, months, days,hours, minutes, seconds;
 	//Display purpose of the program
 	cout << " ******************************************" << endl;
@@ -131,7 +127,7 @@ int main()
 				cout << "number of  minutes = " << minutes << "\n\n";
 					cout << "number of  seconds = " << seconds << "\n\n";					
 	                    cout << "Program has ended" << endl;
-
+  */
 
 	/*
 	*this the program will print your first initial as a block letter. 
@@ -139,34 +135,61 @@ int main()
 	**/
 	
 	
-	char initial;
+	char response;
 	//Display purpose of the program
 	cout << " ******************************************" << endl;
-	cout << " This program will  print your first initial as a block letter. " << endl;
+	cout << " This program will  print my first initial as a block letter(this program can hanldle 6 characters: issouf ). " << endl;
 	cout << " ******************************************\n\n";
 
 	//Get user input
-	cout << "Please your first initial: ";
-	cin >> initial;
+	cout << "do you want to see it?(enter y/n): ";
+	cin >> response;
 
-	//make a grid
-	int grid[6][6] = {{1,2,3,4,5,6}, {1,2,3,4,5,6}};
-    char character = '*';
+    if (response == 'y'){
+    cout << "1 2 3 4 5 6" << endl;   
+    cout <<2<< "  *******  "<< endl;
+    cout <<3<< "     *"<< endl;       
+    cout <<4<< "     *"<< endl;
+    cout <<5<< "     *"<< endl; 
+    cout <<6<< "  *******  "<< endl;
 	
-	//Display 
-	
-	cout << grid[1][1] << grid[1][2] <<grid[1][6] <<grid[6][6] <<grid[6][6] <<grid[6][6] << "\n";
-	cout << grid[6][6]<< "\n";
-	cout << grid[6][6]<< "\n";
-	cout << grid[6][6]<< "\n";
-	cout << grid[6][6]<< "\n";
-	cout << grid[6][6]<< "\n";
-
-							
-    cout << "Program has ended" << endl;
-
-	
-
+	cout << "1 2 3 4 5 6" << endl;   
+    cout <<2<< "    ****** "<< endl;
+    cout <<3<< "  *"<< endl;       
+    cout <<4<< "    *****"<< endl;
+    cout <<5<< "         *"<< endl; 
+    cout <<6<< "  *******  "<< endl;
+    
+	cout << "1 2 3 4 5 6" << endl;
+    cout <<2<< "   ******  "<< endl;
+    cout <<3<< "  *"<< endl;       
+    cout <<4<< "    *****"<< endl;
+    cout <<5<< "         *"<< endl; 
+    cout <<6<< "  *******  "<< endl;
+    
+    cout << "1 2 3 4 5 6" << endl;    
+    cout <<2<< "   ******  "<< endl;
+    cout <<3<< "  *      *"<< endl;       
+    cout <<4<< "  *      *"<< endl;
+    cout <<5<< "  *      *"<< endl; 
+    cout <<6<< "   ******  "<< endl;
+    
+    cout << "1 2 3 4 5 6" << endl;    
+    cout <<2<<" *      *  "<< endl;
+    cout <<3<< "  *   *"<< endl;       
+    cout <<4<< "  *   *"<< endl;
+    cout <<5<< "  *   *"<< endl; 
+    cout <<6<< "   ***  "<< endl;
+    
+      cout << "1 2 3 4 5 6" << endl;    
+    cout <<2<< "   ******  "<< endl;
+    cout <<3<< "  *      "<< endl;       
+    cout <<4<< "  *******"<< endl;
+    cout <<5<< "  *      "<< endl; 
+    cout <<6<< "  * "<< endl;
+}else{
+    cout << "okay, I understand.Bye now!\n";
+    }
 	system("pause");
 	
 	return 0;
