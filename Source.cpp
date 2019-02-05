@@ -22,7 +22,7 @@ int right = 0;
 int main()
 {
 
-/*
+
 	double miles, kilometers, meters, centimeters, millimeters;
 
 	//Display purpose of the program
@@ -50,8 +50,8 @@ int main()
 	/*
 	*this the program will calculate the circonference of a cercle 
 	*
-	**/
-		/*
+	*/
+		
 
 	float radius, circonference;
 	//Display purpose of the program
@@ -77,7 +77,7 @@ int main()
 	*this the program will  convert a temperature in degrees Celsius to degrees Fahrenheit.
 	*
 	**/
-	/*
+	
 	float Fahrenheit, Celsius;
 	//Display purpose of the program
 	cout << " ******************************************" << endl;
@@ -101,7 +101,7 @@ int main()
 	*this the program will take a given person age in years computes the equivalent number of months, days, hours, minutes, and seconds. 
 	*
 	**/
-	/*
+
 	float years, months, days,hours, minutes, seconds;
 	//Display purpose of the program
 	cout << " ******************************************" << endl;
@@ -127,7 +127,7 @@ int main()
 				cout << "number of  minutes = " << minutes << "\n\n";
 					cout << "number of  seconds = " << seconds << "\n\n";					
 	                    cout << "Program has ended" << endl;
-  */
+
 
 	/*
 	*this the program will print your first initial as a block letter. 
@@ -142,10 +142,10 @@ int main()
 	cout << " ******************************************\n\n";
 
 	//Get user input
-	cout << "do you want to see it?(enter y/n): ";
+	cout << "do you want to see it?(enter n to skip): ";
 	cin >> response;
 
-    if (response == 'y'){
+    if (response != 'n'){
     cout << "1 2 3 4 5 6" << endl;   
     cout <<2<< "  *******  "<< endl;
     cout <<3<< "     *"<< endl;       
